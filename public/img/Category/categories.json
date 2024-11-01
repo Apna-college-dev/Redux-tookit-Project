@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Sofa",
+        "image": "./img/Category/Images/01.svg"
+    },
+    {
+        "name": "TV Cabinet",
+        "image": "./img/Category/Images/02.svg"
+    },
+    {
+        "name": "Dining",
+        "image": "./img/Category/Images/03.svg"
+    },
+    {
+        "name": "Wordrobe",
+        "image": "./img/Category/Images/04.svg"
+    },
+    {
+        "name": "Bed",
+        "image": "./img/Category/Images/05.svg"
+    },
+    {
+        "name": "Dressing Table",
+        "image": "./img/Category/Images/06.svg"
+    },
+    {
+        "name": "Door",
+        "image": "./img/Category/Images/07.svg"
+    },
+    {
+        "name": "Divan",
+        "image": "./img/Category/Images/08.svg"
+    },
+    {
+        "name": "Office",
+        "image": "./img/Category/Images/09.svg"
+    },
+    {
+        "name": "Kitchen",
+        "image": "./img/Category/Images/10.svg"
+    },
+    {
+        "name": "Lamp",
+        "image": "./img/Category/Images/11.svg"
+    },
+    {
+        "name": "Reading Table",
+        "image": "./img/Category/Images/12.svg"
+    },
+    {
+        "name": "Mattress",
+        "image": "./img/Category/Images/13.svg"
+    },
+    {
+        "name": "Chest Drawers",
+        "image": "./img/Category/Images/14.svg"
+    },
+    {
+        "name": "Windows",
+        "image": "./img/Category/Images/15.svg"
+    },
+    {
+        "name": "Miscellaneous",
+        "image": "./img/Category/Images/16.svg"
+    }
+]

@@ -29,6 +29,11 @@ const Navbar = () => {
       "path": "/cart",
       "icon":<BsCart />
     },
+    {
+      "label": "List Items",
+      "path": "/items",
+      "icon":<BsCart />
+    },
     
   ]
 

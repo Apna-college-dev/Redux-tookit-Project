@@ -7,7 +7,7 @@
         "description": "Illuminate your living space with this elegant table lamp, featuring a timeless design that complements any decor style. Crafted with a durable metal base and a soft fabric shade, this lamp provides a warm and inviting glow. Perfect for placing on bedside tables or desks, it adds a touch of sophistication to your home.",
         "price": 49.99,
         "category": "Lamps",
-        "images":  "./img/Product/images/Product02/1.jpg",
+        "images":  "https://www.avismaxirent.sk/images_avis/pexels/cache/architectural-design-architecture-buildings-830891-450x280.jpg",
         "reviews": [
           {
             "user": "Alice",

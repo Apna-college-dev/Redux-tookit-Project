@@ -1,33 +1,82 @@
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './components/Pages/Home'
 import Shop from './components/Pages/Shop'
 import Footer from './components/Footer'
 import Carts from './components/Pages/Carts'
+import Items from './components/Pages/Items';
+import PopUp from './components/Pages/PopUp';
+
+
+
+
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: (
+      <>
+        <Navbar />
+        <Home />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/shop',
+    element: (
+      <>
+        <Navbar />
+        <Shop />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: '/cart',
+    element: (
+      <>
+        <Navbar />
+        <Carts />
+        <Footer />
+      </>
+    ),
+  },
+  
+  {
+    path: '/popup/:id',
+    element: (
+      <>
+      <PopUp/>
+      </>
+    ),
+  },
+  {
+    path: '/items',
+    element: (
+      <>
+        <Navbar />
+        <Items />
+        <Footer />
+      </>
+    ),
+  },
+]);
+
+
+
  
-
-
-
-
-
-
-
-
 function App() {
 
   return (
-    <Router>
-      <Navbar />
     <div>
-      <Routes>
-     <Route path='/' element={<Home/>}/> 
-     <Route path='/shop' element={<Shop/>}/> 
-     <Route path='/cart' element={<Carts/>}/> 
-      </Routes>
-      <Footer />
+      <RouterProvider router={router} />;
     </div>
-    
-    </Router>
   )
 }
 

@@ -6,7 +6,7 @@ import "react-js-dialog-box/dist/index.css";
 import { AddItem } from "../../Slices/ProductCarts";
 
 const PopUp = ({isOpen, closeBox,data}) => {
-  const {register, handleSubmit, reset, setValue } = useForm();
+  const {register, handleSubmit, reset,setValue} = useForm();
   const dispatch = useDispatch();
   console.log("data", data);
 
@@ -16,14 +16,13 @@ const PopUp = ({isOpen, closeBox,data}) => {
       setValue("images", data.images);
       setValue("price", data.price);
     } else{
-      
       setValue("name", null);
       setValue("images", null);
       setValue("price", null);
     }
   }, [isOpen]);
 
-  const onSubmit = async (values) => {
+  const onSubmit = async(values) => {
     const file = values.image[0]; //
     if (file){
       const reader = new FileReader();
@@ -93,7 +92,7 @@ const PopUp = ({isOpen, closeBox,data}) => {
               Price
             </label>
             <input
-              {...register("price", {
+              {...register("price",{
                 required: { value: true, message: "required" },
               })}
               type="number"

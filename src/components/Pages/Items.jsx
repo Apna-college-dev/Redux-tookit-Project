@@ -41,13 +41,13 @@ const Items = () => {
         <div>
           <button
             onClick={() => handleEdit(info.row.original)}
-            className="text-green-500 px-4"
+            className = "text-green-500 px-4"
           >
             <MdEdit/>
           </button>
           <button
             onClick={() => handleDelete(info.row.original)}
-            className="text-red-500 "
+            className = "text-red-500 "
           >
             <FaRegTrashCan/>
           </button>
@@ -68,18 +68,15 @@ const Items = () => {
   return (
     <div className="w-full h-full flex flex-col py-3 justify-center items-center">
       <h1 className="text-center font-bold text-xl py-3">List Items</h1>
-      
-      <div className="flex justify-between items-center py-2">
+      <div className="flex gap-10 items-center">
      <input
           type="text"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
-          className="px-4 py-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        />
+          className="px-4 py-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent"/>
         <button
           onClick={openBox}
-          className="bg-gray-500 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded"
-        >
+          className="bg-gray-500 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded-lg">
           Add new
         </button>
         </div>

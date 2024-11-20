@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import Carts from './components/Pages/Carts'
 import Items from './components/Pages/Items';
 import PopUp from './components/Pages/PopUp';
+import Page from './components/Pages/Page';
 
 
 
@@ -64,6 +65,18 @@ const router = createBrowserRouter([
         <Items />
         <Footer />
       </>
+      
+    ),
+  },
+  {
+    path: '/page',
+    element: (
+      <>
+        <Navbar />
+        <Page/>
+        
+      </>
+      
     ),
   },
 ]);

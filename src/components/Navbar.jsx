@@ -34,6 +34,11 @@ const Navbar = () => {
       "path": "/items",
       "icon":<BsCart />
     },
+    {
+      "label": "Page",
+      "path": "/page",
+      "icon":<BsCart />
+    },
     
   ]
 
